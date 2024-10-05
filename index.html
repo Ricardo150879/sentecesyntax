@@ -1,0 +1,1532 @@
+<!DOCtype html>
+<html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head><title>Syntax of the Sentence</title>
+<style>
+
+body{
+background-color:azure;
+font-size:26px;
+font-weight:bold;
+}
+
+textarea{
+max-width: 100%;
+width: 100%;
+box-sizing: border-box; /* Inclui padding e border na largura total */
+font-size:23px;
+color:#505050;
+font-weight:bold;
+marging:2px 2px;
+padding:2px 2px;
+}
+
+.myframe{
+overflow-y:scroll; 
+height:500px; 
+font-weight: bold;
+}
+
+.header {
+ // position: sticky;
+  //top: 0;
+  padding: 10px 16px;
+  background: #555;
+}
+
+#myheader {
+  position: sticky;
+  top: 0;
+}
+
+h1 {  
+  position: relative;  
+  padding: 0;  
+  margin: 0;  
+  font-family: "Raleway", Cursive;  
+  font-weight: 300;  
+  font-size: 40px;  
+  color: #ffffff;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+  text-align: center;  
+}
+
+h2 {  
+  position: relative;  
+  padding: 0;  
+  margin: 0;  
+  color: #ffffff;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+  text-align: left;  
+}
+
+h3 {  
+  position: relative;  
+  padding: 0;  
+  margin: 0;  
+  color: #ffffff;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+  text-align: left;  
+}
+
+.blue{
+    color:blue;
+}
+.green{
+    color:green;
+}
+
+.darkgreen{
+    color:darkgreen;
+}
+
+.red{
+    color:red;
+}
+
+.purple{
+    color:purple;
+}
+
+.darkblue{
+    color:darkblue;
+}
+
+.gold{
+    color:gold;
+}
+
+.DeepPink{
+    color:DeepPink;
+}
+
+.gray{
+    color:gray;
+}
+
+.violet{
+    color:violet;
+}
+
+.DarkTurquoise{
+    color:DarkTurquoise;
+}
+
+.DarkOliveGreen{
+    color:DarkOliveGreen;
+}
+
+.maroon{
+    color:maroon;
+}
+
+.brown{
+    color:brown;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Sentences syntax</h1>
+</div>
+<hr>
+<div class="myframe">
+<p>In linguistics, syntax (/ˈsɪntæks/ SIN-taks) is the study of how words and morphemes combine to form larger units such as phrases and sentences. Central concerns of syntax include word order, grammatical relations, hierarchical sentence structure (constituency),[3] agreement, the nature of crosslinguistic variation, and the relationship between form and meaning (semantics)..</p>
+<p>The field of syntax contains a number of various topics that a syntactic theory is often designed to handle. The relation between the topics is treated differently in different theories, and some of them may not be considered to be distinct but instead to be derived from one another (i.e. word order can be seen as the result of movement rules derived from grammatical relations).</p>
+<p>One basic description of a language's syntax is the sequence in which the subject (S), verb (V), and object (O) usually appear in sentences. Over 85% of languages usually place the subject first, either in the sequence SVO or the sequence SOV. The other possible sequences are VSO, VOS, OVS, and OSV, the last three of which are rare. In most generative theories of syntax, the surface differences arise from a more complex clausal phrase structure, and each order may be compatible with multiple derivations. However, word order can also reflect the semantics or function of the ordered elements.</p>
+
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:blue;">Object</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>Marvin ate grapes. </b></p>
+
+<textarea onkeyup="textChange1()"></textarea>
+<div id="colorText1"></div><br>
+
+<script>
+var textChange1=function(){
+    var text=event.target.value;
+
+
+    if(text.indexOf("Marvin")>-1){
+        text=text.replace("Marvin", "<span class='purple'>Marvin</span>");
+    }
+
+    if(text.indexOf("ate")>-1){
+        text=text.replace("ate", "<span class='red'>ate</span>");
+    }
+
+    if(text.indexOf("grapes")>-1){
+        text=text.replace("grapes", "<span class='blue'>grapes</span>");
+    }
+
+       document.getElementById("colorText1").innerHTML=text;
+}
+</script>
+
+<p><b> He has brought coffee.</b></p>
+<textarea onkeyup="textChange2()"></textarea>
+<div id="colorText2"></div>
+
+<script>
+var textChange2=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("He")>-1){
+        text=text.replace("He", "<span class='purple'>He</span>");
+    }
+
+   if(text.indexOf("has brought")>-1){
+        text=text.replace("has brought", "<span class='red'>has brought</span>");
+    }
+
+   if(text.indexOf("coffee")>-1){
+        text=text.replace("coffee", "<span class='blue'>coffee</span>");
+    }
+   document.getElementById("colorText2").innerHTML=text;
+}
+</script>
+
+<p><b> She is bringing fruits</b></p>
+<textarea onkeyup="textChange3()"></textarea>
+<div id="colorText3"></div>
+
+<script>
+var textChange3=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+   if(text.indexOf("is")>-1){
+        text=text.replace("is bringing", "<span class='red'>is bringing</span>");
+    }
+
+   if(text.indexOf("fruits")>-1){
+        text=text.replace("fruits", "<span class='blue'>fruits</span>");
+    }
+
+   document.getElementById("colorText3").innerHTML=text;
+}
+</script>
+
+<p><b> I have to wait for Elizabeth.</b></p>
+<textarea onkeyup="textChange4()"></textarea>
+<div id="colorText4"></div>
+
+<script>
+var textChange4=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("I")>-1){
+        text=text.replace("I", "<span class='purple'>I</span>");
+    }
+
+   if(text.indexOf("have to wait")>-1){
+        text=text.replace("have to wait", "<span class='red'>have to wait</span>");
+    }
+
+   if(text.indexOf("for Elizabeth")>-1){
+        text=text.replace("for Elizabeth", "<span class='blue'>for Elizabeth</span>");
+    }
+
+   document.getElementById("colorText4").innerHTML=text;
+}
+</script>
+
+<p><b> She hates leaving home </b></p><br>
+<textarea onkeyup="textChange5()"></textarea>
+<div id="colorText5"></div><br>
+
+<script>
+var textChange5=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+   if(text.indexOf("hates leaving")>-1){
+        text=text.replace("hates leaving", "<span class='red'>hates leaving</span>");
+    }
+
+ if(text.indexOf("home")>-1){
+        text=text.replace("home", "<span class='blue'>home</span>");
+    }
+
+   document.getElementById("colorText5").innerHTML=text;
+}
+</script>
+
+<p><b> He bought me a new sweater. </b></p><br>
+<textarea onkeyup="textChange6()"></textarea>
+<div id="colorText6"></div><br>
+
+<script>
+var textChange6=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("He")>-1){
+        text=text.replace("He", "<span class='purple'>He</span>");
+    }
+
+   if(text.indexOf("bought")>-1){
+        text=text.replace("bought", "<span class='red'>bought</span>");
+    }
+
+ if(text.indexOf("me a new sweater")>-1){
+        text=text.replace("me a new sweater", "<span class='blue'>me a new sweater</span>");
+    }
+
+   document.getElementById("colorText6").innerHTML=text;
+}
+</script>
+
+<p><b>I've lent the car to a friend.</b></p><br>
+
+<textarea onkeyup="textChange7()"></textarea>
+<div id="colorText7"></div><br>
+
+<script>
+var textChange7=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("I")>-1){
+        text=text.replace("I", "<span class='purple'>I</span>");
+    }
+
+    if (text.indexOf("ve lent")>-1){
+        text=text.replace("ve lent", "<span class='red'>ve lent</span>");
+    }
+
+   if (text.indexOf("the car to a friend")>-1){
+        text=text.replace("the car to a friend", "<span class='blue'>the car to a friend</span>");
+    }
+
+       document.getElementById("colorText7").innerHTML=text;
+}
+</script>
+
+<p><b>He makes him own coat.</b></p><br>
+
+<textarea onkeyup="textChange8()"></textarea>
+<div id="colorText8"></div><br>
+
+<script>
+var textChange8=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("He")>-1){
+        text=text.replace("He", "<span class='purple'>He</span>");
+    }
+
+    if (text.indexOf("makes")>-1){
+        text=text.replace("makes", "<span class='red'>makes</span>");
+    }
+
+    if (text.indexOf("him own coat")>-1){
+        text=text.replace("him own coat", "<span class='blue'>him own coat</span>");
+    }
+
+       document.getElementById("colorText8").innerHTML=text;
+}
+</script>
+
+<p><b>My boss offered me a great new job.</b></p><br>
+
+<textarea onkeyup="textChange9()"></textarea>
+<div id="colorText9"></div><br>
+
+<script>
+var textChange9=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("My boss")>-1){
+        text=text.replace("My boss", "<span class='purple'>My boss</span>");
+    }
+
+    if (text.indexOf("offered")>-1){
+        text=text.replace("offered", "<span class='red'>offered</span>");
+    }
+
+   if (text.indexOf("me a great new job")>-1){
+        text=text.replace("me a great new job", "<span class='blue'>me a great new job</span>");
+    }
+
+       document.getElementById("colorText9").innerHTML=text;
+}
+</script>
+
+<p><b>Marcus loves play the guitar</b></p><br>
+
+<textarea onkeyup="textChange10()"></textarea>
+<div id="colorText10"></div><br>
+
+<script>
+var textChange10=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Marcus")>-1){
+        text=text.replace("Marcus", "<span class='purple'>Marcus</span>");
+    }
+
+    if (text.indexOf("loves play")>-1){
+        text=text.replace("loves play", "<span class='red'>loves play</span>");
+    }
+
+   if (text.indexOf("the guitar")>-1){
+        text=text.replace("the guitar", "<span class='blue'>the guitar</span>");
+    }
+     
+        document.getElementById("colorText10").innerHTML=text;
+}
+</script>
+
+<p><b>The teacher showed the technique to her students.</b></p><br>
+
+<textarea onkeyup="textChange11()"></textarea>
+<div id="colorText11"></div><br>
+
+<script>
+var textChange11=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("The teacher")>-1){
+        text=text.replace("The teacher", "<span class='purple'>The teacher</span>");
+    }
+
+   if (text.indexOf("showed")>-1){
+        text=text.replace("showed", "<span class='red'>showed</span>");
+    }
+
+   if (text.indexOf("the technique to her students")>-1){
+        text=text.replace("the technique to her students", "<span class='blue'>the technique to her students</span>");
+    }
+
+       document.getElementById("colorText11").innerHTML=text;
+}
+</script>
+
+<p><b>Give your mother the letter</b></p><br>
+
+<textarea onkeyup="textChange12()"></textarea>
+<div id="colorText12"></div><br>
+
+<script>
+var textChange12=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Give")>-1){
+        text=text.replace("Give", "<span class='red'>Give</span>");
+    }
+
+   if (text.indexOf("your mother")>-1){
+        text=text.replace("your mother", "<span class='purple'>your mother</span>");
+    }
+
+   if (text.indexOf("the letter")>-1){
+        text=text.replace("the letter", "<span class='blue'>the letter</span>");
+    }
+
+       document.getElementById("colorText12").innerHTML=text;
+}
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Subject-Verb (SV)<br>
+The simplest sentence structure is Subject-Verb (SV). It consists of a subject and a verb</p>
+
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>We walked to the park.</b></p>
+
+<textarea onkeyup="textChange19()"></textarea>
+<div id="colorText19"></div><br>
+
+<script>
+var textChange19=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("We")>-1){
+        text=text.replace("We", "<span class='purple'>We</span>");
+    }
+
+    if (text.indexOf("walked")>-1){
+        text=text.replace("walked", "<span class='red'>walked</span>");
+    }
+
+       document.getElementById("colorText19").innerHTML=text;
+}
+</script>
+
+<p><b>She sings beautifully.</b></p>
+
+<textarea onkeyup="textChange20()"></textarea>
+<div id="colorText20"></div><br>
+
+<script>
+var textChange20=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+    if (text.indexOf("sings")>-1){
+        text=text.replace("sings", "<span class='red'>sings</span>");
+    }
+
+       document.getElementById("colorText20").innerHTML=text;
+}
+</script>
+
+<p><b>They study hard.</b></p>
+
+<textarea onkeyup="textChange21()"></textarea>
+<div id="colorText21"></div><br>
+
+<script>
+var textChange21=function(){
+    var text=event.target.value;
+
+    if (text.indexOf("They")>-1){
+        text=text.replace("They", "<span class='purple'>They</span>");
+    }
+
+    if (text.indexOf("study")>-1){
+        text=text.replace("study", "<span class='red'>study</span>");
+    }
+
+       document.getElementById("colorText21").innerHTML=text;
+}
+</script>
+
+<p><b>The dogs ran</b></p>
+
+<textarea onkeyup="textChange22()"></textarea>
+<div id="colorText22"></div><br>
+
+<script>
+var textChange22=function(){
+    var text=event.target.value;
+
+    if (text.indexOf("The dogs")>-1){
+        text=text.replace("The dogs", "<span class='purple'>The dogs</span>");
+    }
+
+    if (text.indexOf("ran")>-1){
+        text=text.replace("ran", "<span class='red'>ran</span>");
+    }
+
+       document.getElementById("colorText22").innerHTML=text;
+}
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p1>Subject-Verb-Complement (SVC)<br>
+The Subject-Verb-Complement (SVC) structure consists of a subject, a linking verb, and a complement. The complement describes or renames the subject.</p>
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:brown;">Complement</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>Anna is a teacher.</b></p>
+
+<textarea onkeyup="textChange25()"></textarea>
+<div id="colorText25"></div><br>
+
+<script>
+var textChange25=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Anna")>-1){
+        text=text.replace("Anna", "<span class='purple'>Anna</span>");
+    }
+
+    if (text.indexOf("is")>-1){
+        text=text.replace("is", "<span class='red'>is</span>");
+    }
+
+   if (text.indexOf("a teacher")>-1){
+        text=text.replace("a teacher", "<span class='brown'>a teacher</span>");
+    }
+
+       document.getElementById("colorText25").innerHTML=text;
+}
+</script>
+
+<p1><b>They are happy.</b></p1>
+
+<textarea onkeyup="textChange26()"></textarea>
+<div id="colorText26"></div><br>
+
+<script>
+var textChange26=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("They")>-1){
+        text=text.replace("They", "<span class='purple'>They</span>");
+    }
+
+    if (text.indexOf("are")>-1){
+        text=text.replace("are", "<span class='red'>are</span>");
+    }
+ 
+    if (text.indexOf("happy")>-1){
+        text=text.replace("happy", "<span class='brown'>happy</span>");
+    }
+
+       document.getElementById("colorText26").innerHTML=text;
+}
+</script>
+
+<p><b> The athletes were tired after the long running.</b></p>
+
+<textarea onkeyup="textChange27()"></textarea>
+<div id="colorText27"></div><br>
+
+<script>
+var textChange27=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("The athletes")>-1){
+        text=text.replace("The athletes", "<span class='purple'>The athletes</span>");
+    }
+
+    if (text.indexOf("were tired")>-1){
+        text=text.replace("were tired", "<span class='red'>were tired</span>");
+    }
+
+    if (text.indexOf("were")>-1){
+        text=text.replace("after the long running", "<span class='brown'>after the long running</span>");
+    }
+
+       document.getElementById("colorText27").innerHTML=text;
+}
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Subject-Verb-Adverbial (SVA)<br>
+The Subject-Verb-Adverbial (SVA) structure consists of a subject, a verb, and an adverbial. The adverbial describes the verb and provides additional information about the sentence.</p>
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:darkblue;">Adverbial</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>We walked slowly to the park.</b></p>
+
+<textarea onkeyup="textChange32()"></textarea>
+<div id="colorText32"></div><br>
+
+<script>
+var textChange32=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("We")>-1){
+        text=text.replace("We", "<span class='purple'>We</span>");
+    }
+
+    if (text.indexOf("walked")>-1){
+        text=text.replace("walked", "<span class='red'>walked</span>");
+    }
+
+   if (text.indexOf("slowly to the park")>-1){
+        text=text.replace("slowly to the park", "<span class='darkblue'>slowly to the park</span>");
+    }
+
+       document.getElementById("colorText32").innerHTML=text;
+}
+</script>
+
+<p><b>She sang beautifully in the karaoke.</b></p>
+
+<textarea onkeyup="textChange33()"></textarea>
+<div id="colorText33"></div><br>
+
+<script>
+var textChange33=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+     if (text.indexOf("sang")>-1){
+        text=text.replace("sang", "<span class='red'>sang</span>");
+    }
+
+      if (text.indexOf("beautifully in the karaoke")>-1){
+        text=text.replace("beautifully in the karaoke", "<span class='darkblue'>beautifully in the karaoke</span>");
+    }
+
+       document.getElementById("colorText33").innerHTML=text;
+}
+</script>
+
+<p><b>Mary studies hard every day.</b></p>
+
+<textarea onkeyup="textChange34()"></textarea>
+<div id="colorText34"></div><br>
+
+<script>
+var textChange34=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Mary")>-1){
+        text=text.replace("Mary", "<span class='purple'>Mary</span>");
+    }
+
+    if (text.indexOf("studies")>-1){
+        text=text.replace("studies", "<span class='red'>studies</span>");
+    }
+
+     if (text.indexOf("hard every day")>-1){
+        text=text.replace("hard every day", "<span class='darkblue'>hard every day</span>");
+    }
+
+       document.getElementById("colorText34").innerHTML=text;
+}
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Subject-Verb-Object-Complement (SVOC)<br>
+The Subject-Verb-Object-Complement (SVOC) structure consists of a subject, a verb, an object, and a complement. The complement describes or renames the object. Here are a few examples:</p>
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:blue;">Object</h3>
+<h3 style="background-color:brown;">Complement</h3>
+</div>
+
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>We elected him chairman.</b></p>
+
+<textarea onkeyup="textChange40()"></textarea>
+<div id="colorText40"></div><br>
+
+<script>
+var textChange40=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("We")>-1){
+        text=text.replace("We", "<span class='purple'>We</span>");
+    }
+
+    if (text.indexOf("elected")>-1){
+        text=text.replace("elected", "<span class='red'>elected</span>");
+    }
+ 
+    if (text.indexOf("him")>-1){
+        text=text.replace("him", "<span class='blue'>him</span>");
+    }
+
+    if (text.indexOf("chairman")>-1){
+        text=text.replace("chairman", "<span class='brown'>chairm</span>");
+    }
+
+       document.getElementById("colorText40").innerHTML=text;
+ }
+</script>
+
+<p><b>She considers herself lucky.</b></p>
+
+<textarea onkeyup="textChange41()"></textarea>
+<div id="colorText41"></div><br>
+
+<script>
+var textChange41=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+    if (text.indexOf("considers")>-1){
+        text=text.replace("considers", "<span class='red'>considers</span>");
+    }
+
+    if (text.indexOf("herself")>-1){
+        text=text.replace("herself", "<span class='blue'>herself</span>");
+    }
+
+     if (text.indexOf("lucky")>-1){
+        text=text.replace("lucky", "<span class='brown'>lucky</span>");
+    }
+
+       document.getElementById("colorText41").innerHTML=text;
+ }
+</script>
+
+
+<p><b>They named their baby girl Lily.</b></p>
+
+<textarea onkeyup="textChange42()"></textarea>
+<div id="colorText42"></div><br>
+
+<script>
+var textChange42=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("They")>-1){
+        text=text.replace("They", "<span class='purple'>They</span>");
+    }
+
+    if (text.indexOf("named")>-1){
+        text=text.replace("named", "<span class='red'>named</span>");
+    }
+
+    if (text.indexOf("their baby")>-1){
+        text=text.replace("their baby", "<span class='blue'>their baby</span>");
+    }
+
+     if (text.indexOf("girl Lily")>-1){
+        text=text.replace("girl Lily", "<span class='brown'>girl Lily</span>");
+    }
+
+       document.getElementById("colorText42").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Subject-Verb-Object-Adverbial (SVOA)<br>
+The Subject-Verb-Object-Adverbial (SVOA) structure consists of a subject, a verb, an object, and an adverbial. The adverbial describes the verb and provides additional information about the sentence.</p>
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:blue;">Object</h3>
+<h3 style="background-color:darkblue;">Adverbial</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>We ate burger for lunch quickly.</b></p>
+
+<textarea onkeyup="textChange46()"></textarea>
+<div id="colorText46"></div><br>
+
+<script>
+var textChange46=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("We")>-1){
+        text=text.replace("We", "<span class='purple'>We</span>");
+    }
+
+    if (text.indexOf("ate")>-1){
+        text=text.replace("ate", "<span class='red'>ate</span>");
+    }
+
+   if (text.indexOf("burger")>-1){
+        text=text.replace("burger", "<span class='blue'>burger</span>");
+    }
+
+   if (text.indexOf("for lunch quickly")>-1){
+        text=text.replace("for lunch quickly", "<span class='darkblue'>for lunch quickly</span>");
+    }
+
+       document.getElementById("colorText46").innerHTML=text;
+ }
+</script>
+
+<p><b>She plays the violin beautifully in the band.</b></p>
+
+<textarea onkeyup="textChange47()"></textarea>
+<div id="colorText47"></div><br>
+
+<script>
+var textChange47=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+    if (text.indexOf("plays")>-1){
+        text=text.replace("plays", "<span class='red'>plays</span>");
+    }
+
+    if (text.indexOf("the violin")>-1){
+        text=text.replace("the violin", "<span class='blue'>the violin</span>");
+    }
+
+    if (text.indexOf("beautifully in the band")>-1){
+        text=text.replace("beautifully in the band", "<span class='darkblue'>beautifully in the band</span>");
+    }
+
+       document.getElementById("colorText47").innerHTML=text;
+ }
+</script>
+
+<p><b>We watched a play last night excitedly.</b></p>
+
+<textarea onkeyup="textChange48()"></textarea>
+<div id="colorText48"></div><br>
+
+<script>
+var textChange48=function(){
+    var text=event.target.value;
+
+    if (text.indexOf("We")>-1){
+        text=text.replace("We", "<span class='purple'>We</span>");
+    }
+    
+    if (text.indexOf("watched")>-1){
+        text=text.replace("watched", "<span class='red'>watched</span>");
+    }
+
+    if (text.indexOf("a play")>-1){
+        text=text.replace("a play", "<span class='blue'>a play</span>");
+    }
+
+    if (text.indexOf("last night excitedly")>-1){
+        text=text.replace("last night excitedly", "<span class='darkblue'>last night excitedly</span>");
+    }
+
+       document.getElementById("colorText48").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Subject-Verb-Indirect Object-Direct Object (SVIODO)<br>
+The Subject-Verb-Indirect Object-Direct Object (SVIODO) structure consists of a subject, a verb, an indirect object, and a direct object. The indirect object tells us to whom or for whom the action is done. Here are a few examples:</p>
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:darkgreen;">Inderect Object</h3>
+<h3 style="background-color:blue;">Direct Object</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>Paul gave Helena a gift.</b></p>
+
+<textarea onkeyup="textChange50()"></textarea>
+<div id="colorText50"></div><br>
+
+<script>
+var textChange50=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Paul")>-1){
+        text=text.replace("Paul", "<span class='purple'>Paul</span>");
+    }
+
+    if (text.indexOf("gave")>-1){
+        text=text.replace("gave", "<span class='red'>gave</span>");
+    }
+
+    if (text.indexOf("Helena")>-1){
+        text=text.replace("Helena", "<span class='darkgreen'>Helena</span>");
+    }
+
+    if (text.indexOf("a gift")>-1){
+        text=text.replace("a gift", "<span class='blue'>a gift</span>");
+    }
+   
+     document.getElementById("colorText50").innerHTML=text;
+ }
+</script>
+
+<p><b>She sent her aunt a postcard.</b></p>
+
+<textarea onkeyup="textChange51()"></textarea>
+<div id="colorText51"></div><br>
+
+<script>
+var textChange51=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+    if (text.indexOf("sent")>-1){
+        text=text.replace("sent", "<span class='red'>sent</span>");
+    }
+
+   if (text.indexOf("her aunt")>-1){
+        text=text.replace("her aunt", "<span class='darkgreen'>her aunt</span>");
+    }
+
+   if (text.indexOf("a postcard")>-1){
+        text=text.replace("a postcard", "<span class='blue'>a postcard</span>");
+    }
+   
+     document.getElementById("colorText51").innerHTML=text;
+ }
+</script>
+
+<p><b>They bought their daughter a new volleyball ball.</b></p>
+
+<textarea onkeyup="textChange52()"></textarea>
+<div id="colorText52"></div><br>
+
+<script>
+var textChange52=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("They")>-1){
+        text=text.replace("They", "<span class='purple'>They</span>");
+    }
+
+    if (text.indexOf("bought")>-1){
+        text=text.replace("bought", "<span class='red'>bought</span>");
+    }
+
+    if (text.indexOf("their daughter")>-1){
+        text=text.replace("their daughter", "<span class='darkgreen'>their daughter</span>");
+    }
+
+    if (text.indexOf("a new volleyball ball")>-1){
+        text=text.replace("a new volleyball ball", "<span class='blue'>a new volleyball ball</span>");
+    }
+   
+     document.getElementById("colorText52").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Adverbial-Subject-Verb-Complement (ASVC)<br>
+The Adverbial-Subject-Verb-Complement (ASVC) structure consists of an adverbial, a subject, a linking verb, and a complement. The adverbial describes the sentence and provides additional information. Here are a few examples:</p>
+<div id="myheader">
+<h3 style="background-color:darkblue;">Adverbial</h3>
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:brown;">Complement</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i></p>
+<p><b>Yesterday, he was sick.</b></p>
+
+<textarea onkeyup="textChange54()"></textarea>
+<div id="colorText54"></div><br>
+
+<script>
+var textChange54=function(){
+    var text=event.target.value;
+
+
+   if (text.indexOf("Yesterday")>-1){
+        text=text.replace("Yesterday", "<span class='darkblue'>Yesterday</span>");
+    }
+
+    if (text.indexOf("he")>-1){
+        text=text.replace("he", "<span class='purple'>he</span>");
+    }
+
+    if (text.indexOf("was")>-1){
+        text=text.replace("was", "<span class='red'>was</span>");
+    }
+
+    if (text.indexOf("sick")>-1){
+        text=text.replace("sick", "<span class='brown'>sick</span>");
+    }
+
+     document.getElementById("colorText54").innerHTML=text;
+ }
+</script>
+
+<p><b>After the concert, we were happy.</b></p>
+
+<textarea onkeyup="textChange55()"></textarea>
+<div id="colorText55"></div><br>
+
+<script>
+var textChange55=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("After the concert")>-1){
+        text=text.replace("After the concert", "<span class='darkblue'>After the concert</span>");
+    }
+
+    if (text.indexOf("we")>-1){
+        text=text.replace("we", "<span class='purple'>we</span>");
+    }
+
+    if (text.indexOf("were")>-1){
+        text=text.replace("were", "<span class='red'>were</span>");
+    }
+
+    if (text.indexOf("happy")>-1){
+        text=text.replace("happy", "<span class='brown'>happy</span>");
+    }
+   
+     document.getElementById("colorText55").innerHTML=text;
+ }
+</script>
+
+<p><b>In the evening, she is always tired.</b></p>
+
+<textarea onkeyup="textChange56()"></textarea>
+<div id="colorText56"></div><br>
+
+<script>
+var textChange56=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("In the evening")>-1){
+        text=text.replace("In the evening", "<span class='darkblue'>In the evening</span>");
+    }
+
+    if (text.indexOf("she")>-1){
+        text=text.replace("she", "<span class='purple'>she</span>");
+    }
+
+    if (text.indexOf("is")>-1){
+        text=text.replace("is", "<span class='red'>is</span>");
+    }
+
+    if (text.indexOf("always tired")>-1){
+        text=text.replace("always tired", "<span class='brown'>always tired</span>");
+    }
+   
+     document.getElementById("colorText56").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Adverbial-Subject-Verb-Object (ASVO)<br>
+The Adverbial-Subject-Verb-Object (ASVO) structure consists of an adverbial, a subject, a verb, and an object. The adverbial describes the verb and provides additional information.</p>
+<div id="myheader">
+<h3 style="background-color:darkblue;">Adverbial</h3>
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:blue;">Object</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i><p1>
+<p><b>In the afternoon, she practices the piano.</b></p>
+
+<textarea onkeyup="textChange59()"></textarea>
+<div id="colorText59"></div><br>
+
+<script>
+var textChange59=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("In the afternoon")>-1){
+        text=text.replace("In the afternoon", "<span class='darkblue'>In the afternoon</span>");
+    }
+
+    if (text.indexOf("she")>-1){
+        text=text.replace("she", "<span class='purple'>she</span>");
+    }
+
+    if (text.indexOf("practices")>-1){
+        text=text.replace("practices", "<span class='red'>practices</span>");
+    }
+
+    if (text.indexOf("the piano")>-1){
+        text=text.replace("the piano", "<span class='blue'>the piano</span>");
+    }
+   
+     document.getElementById("colorText59").innerHTML=text;
+ }
+</script>
+
+<p><b>On weekends, they watch movies.</b></p>
+
+<textarea onkeyup="textChange60()"></textarea>
+<div id="colorText60"></div><br>
+
+<script>
+var textChange60=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("On weekends")>-1){
+        text=text.replace("On weekends", "<span class='darkblue'>On weekends</span>");
+    }
+
+    if (text.indexOf("they")>-1){
+        text=text.replace("they", "<span class='purple'>they</span>");
+    }
+
+    if (text.indexOf("watch")>-1){
+        text=text.replace("watch", "<span class='red'>watch</span>");
+    }
+
+     if (text.indexOf("movies")>-1){
+        text=text.replace("movies", "<span class='blue'>movies</span>");
+    }
+   
+     document.getElementById("colorText60").innerHTML=text;
+ }
+</script>
+
+<p><b>Every day, they training chess.</b></p>
+
+<textarea onkeyup="textChange61()"></textarea>
+<div id="colorText61"></div><br>
+
+<script>
+var textChange61=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Every day")>-1){
+        text=text.replace("Every day", "<span class='darkblue'>Every day</span>");
+    }
+
+    if (text.indexOf("they")>-1){
+        text=text.replace("they", "<span class='purple'>they</span>");
+    }
+
+    if (text.indexOf("training")>-1){
+        text=text.replace("training", "<span class='red'>training</span>");
+    }
+
+     if (text.indexOf("chess")>-1){
+        text=text.replace("chess", "<span class='blue'>chess</span>");
+    }
+   
+     document.getElementById("colorText61").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Adverbial-Subject-Verb-Indirect Object-Direct Object (ASVIODO)<br>
+The Adverbial-Subject-Verb-Indirect Object-Direct Object (ASVIODO) structure consists of an adverbial, a subject, a verb, an indirect object, and a direct object. The adverbial describes the sentence and provides additional information.</p>
+<div id="myheader">
+<h3 style="background-color:darkblue;">Adverbial</h3>
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:darkgreen;">Inderect Object</h3>
+<h3 style="background-color:blue;">Direct Object</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i><p1>
+<p><b>Every year, we sent our relatives a souvenir.</b></p>
+
+<textarea onkeyup="textChange62()"></textarea>
+<div id="colorText62"></div><br>
+
+<script>
+var textChange62=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Every year")>-1){
+        text=text.replace("Every year", "<span class='darkblue'>Every year</span>");
+    }
+
+    if (text.indexOf("we")>-1){
+        text=text.replace("we", "<span class='purple'>we</span>");
+    }
+
+    if (text.indexOf("sent")>-1){
+        text=text.replace("sent", "<span class='red'>sent</span>");
+    }
+
+    if (text.indexOf("our relatives")>-1){
+        text=text.replace("our relatives", "<span class='darkgreen'>our relatives</span>");
+    }
+
+    if (text.indexOf("a souvenir")>-1){
+        text=text.replace("a souvenir", "<span class='blue'>a souvenir</span>");
+    }
+   
+     document.getElementById("colorText62").innerHTML=text;
+ }
+</script>
+
+<p><b>In the afternoon, she reads her students a story.</b></p>
+
+<textarea onkeyup="textChange63()"></textarea>
+<div id="colorText63"></div><br>
+
+<script>
+var textChange63=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("In the afternoon")>-1){
+        text=text.replace("In the afternoon", "<span class='darkblue'>In the afternoon</span>");
+    }
+
+    if (text.indexOf("she")>-1){
+        text=text.replace("she", "<span class='purple'>she</span>");
+    }
+
+    if (text.indexOf("reads")>-1){
+        text=text.replace("reads", "<span class='red'>reads</span>");
+    }
+
+     if (text.indexOf("her students")>-1){
+        text=text.replace("her students", "<span class='darkgreen'>her students</span>");
+    }
+
+     if (text.indexOf("a story")>-1){
+        text=text.replace("a story", "<span class='blue'>a story</span>");
+    }
+   
+     document.getElementById("colorText63").innerHTML=text;
+ }
+</script>
+
+<p><b>On holidays Christmas, they give their children gifts.</b></p>
+
+<textarea onkeyup="textChange64()"></textarea>
+<div id="colorText64"></div><br>
+
+<script>
+var textChange64=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("On holidays Christmas")>-1){
+        text=text.replace("On holidays Christmas", "<span class='darkblue'>On holidays Christmas</span>");
+    }
+
+    if (text.indexOf("they")>-1){
+        text=text.replace("they", "<span class='purple'>they</span>");
+    }
+
+    if (text.indexOf("give")>-1){
+        text=text.replace("give", "<span class='red'>give</span>");
+    }
+
+     if (text.indexOf("their children")>-1){
+        text=text.replace("their children", "<span class='darkgreen'>their children</span>");
+    }
+
+    if (text.indexOf("gifts")>-1){
+        text=text.replace("gifts", "<span class='blue'>gifts</span>");
+    }
+   
+     document.getElementById("colorText64").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Subject-Verb-Adverbial-Adverbial (SVAA)<br>
+The Subject-Verb-Adverbial-Adverbial (SVAA) structure consists of a subject, a verb, and two adverbials. The adverbials describe the verb and provide additional information.</p>
+<div id="myheader">
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:darkblue;">Adverbial</h3>
+<h3 style="background-color:darkblue;">Adverbial</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i><p1>
+<p><b>We walked to the park slowly and quietly.</b></p>
+
+<textarea onkeyup="textChange65()"></textarea>
+<div id="colorText65"></div><br>
+
+<script>
+var textChange65=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("We")>-1){
+        text=text.replace("We", "<span class='purple'>We</span>");
+    }
+
+    if (text.indexOf("walked")>-1){
+        text=text.replace("walked", "<span class='red'>walked</span>");
+    }
+
+    if (text.indexOf("to the park slowly and quietly")>-1){
+        text=text.replace("to the park slowly and quietly", "<span class='darkblue'>to the park slowly and quietly</span>");
+    }
+   
+     document.getElementById("colorText65").innerHTML=text;
+ }
+</script>
+
+<p><b>She sings in the choir beautifully and confidently.</b></p>
+
+<textarea onkeyup="textChange66()"></textarea>
+<div id="colorText66"></div><br>
+
+<script>
+var textChange66=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+    if (text.indexOf("sings")>-1){
+        text=text.replace("sings", "<span class='red'>sings</span>");
+    }
+
+     if (text.indexOf("in the choir beautifully and confidently")>-1){
+        text=text.replace("in the choir beautifully and confidently", "<span class='darkblue'>in the choir beautifully and confidently</span>");
+    }
+   
+     document.getElementById("colorText66").innerHTML=text;
+ }
+</script>
+
+<p><b>She studies hard every day and at night.</b></p>
+
+<textarea onkeyup="textChange67()"></textarea>
+<div id="colorText67"></div><br>
+
+<script>
+var textChange67=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("She")>-1){
+        text=text.replace("She", "<span class='purple'>She</span>");
+    }
+
+    if (text.indexOf("studies")>-1){
+        text=text.replace("studies", "<span class='red'>studies</span>");
+    }
+
+    if (text.indexOf("hard every day and at night")>-1){
+        text=text.replace("hard every day and at night", "<span class='darkblue'>hard every day and at night</span>");
+    }
+   
+     document.getElementById("colorText67").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+<div class="myframe">
+<p>Adverbial-Subject-Verb-Adverbial-Adverbial (ASVAA)</p>
+<div id="myheader">
+<h3 style="background-color:darkblue;">Adverbial</h3>
+<h3 style="background-color:purple;">Subject</h3>
+<h3 style="background-color:red;">Verb</h3>
+<h3 style="background-color:darkblue;">Adverbial</h3>
+<h3 style="background-color:darkblue;">Adverbial</h3>
+</div>
+<p><i>Try it out for yourself by rewriting the sentences below.</i><p1>
+<p><b>In the park, the children played happily all afternoon.</b></p>
+
+<textarea onkeyup="textChange68()"></textarea>
+<div id="colorText68"></div><br>
+
+<script>
+var textChange68=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("In the park")>-1){
+        text=text.replace("In the park", "<span class='darkblue'>In the park</span>");
+    }
+
+    if (text.indexOf("the children")>-1){
+        text=text.replace("the children", "<span class='purple'>the children</span>");
+    }
+
+    if (text.indexOf("played")>-1){
+        text=text.replace("played", "<span class='red'>played</span>");
+    }
+
+    if (text.indexOf("happily all afternoon")>-1){
+        text=text.replace("happily all afternoon", "<span class='darkblue'>happily all afternoon</span>");
+    }
+   
+     document.getElementById("colorText68").innerHTML=text;
+ }
+</script>
+
+<p><b>At the concert, the band played loudly and energetically.</b></p>
+
+<textarea onkeyup="textChange69()"></textarea>
+<div id="colorText69"></div><br>
+
+<script>
+var textChange69=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("At the concert")>-1){
+        text=text.replace("At the concert", "<span class='darkblue'>At the concert</span>");
+    }
+
+    if (text.indexOf("the band")>-1){
+        text=text.replace("the band", "<span class='purple'>the band</span>");
+    }
+
+     if (text.indexOf("played")>-1){
+        text=text.replace("played", "<span class='red'>played</span>");
+    }
+
+     if (text.indexOf("loudly and energetically")>-1){
+        text=text.replace("loudly and energetically", "<span class='darkblue'>loudly and energetically</span>");
+    }
+   
+     document.getElementById("colorText69").innerHTML=text;
+ }
+</script>
+
+</div>
+<hr>
+
+</body>
+</html>
